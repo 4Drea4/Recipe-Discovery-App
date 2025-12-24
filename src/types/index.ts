@@ -2,24 +2,24 @@
 //home page categories
 export type Category = {
     idCategory:string;
-    category: string;
-    categoryThumbnail: string;
-    categoryDescription:string;
+    strCategory: string;
+    strCategoryThumb: string;
+    strCategoryDescription:string;
 }
 
 //preview for recipe list
 export type RecipePreview={
     idMeal:string;
-    meal: string;
-    mealThumbnail: string;
+    strMeal: string;
+    strMealThumb: string;
 }
 
 //used for recipe detail page
 export type RecipeDetail ={
     idMeal:string;
-    meal: string;
-    mealThumbnail:string;
-    recipeInstructions: string;
+    strMeal: string;
+    strMealThumb:string;
+    strInstructions: string;
 //ts safety
     [key:string] : string | null | undefined;
 }
