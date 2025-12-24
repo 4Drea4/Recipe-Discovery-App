@@ -16,7 +16,7 @@ export function useFetch<Response>(url:string |null) {
 
         })
         .then((json) => {
-            setData(json);
+            setData(json as Response);
         }
     )
     .catch(() => {

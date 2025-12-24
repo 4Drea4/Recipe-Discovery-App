@@ -24,3 +24,6 @@ export type RecipeDetail ={
     [key:string] : string | null | undefined;
 }
 
+export type CategoriesResponse = {
+    categories: Category[];
+}
