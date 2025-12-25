@@ -27,3 +27,7 @@ export type RecipeDetail ={
 export type CategoriesResponse = {
     categories: Category[];
 }
+
+export type RecipesByCategoryRespone ={
+    meals: RecipePreview[];
+}

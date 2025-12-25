@@ -18,7 +18,7 @@ export default function Home() {
             <ul>
                  {data.categories.map((category) => (
                 <li key= {category.idCategory}>
-                    {category.strCategory}
+                 <Link to={`/category/${category.strCategory}`}>{category.strCategory}</Link>
                 </li>
           
         ))}
