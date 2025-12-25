@@ -28,6 +28,6 @@ export type CategoriesResponse = {
     categories: Category[];
 }
 
-export type RecipesByCategoryRespone ={
+export type RecipesByCategoryResponse ={
     meals: RecipePreview[];
 }

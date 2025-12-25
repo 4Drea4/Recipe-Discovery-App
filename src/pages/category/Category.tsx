@@ -1,7 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
-import {RecipesByCategoryResponse }
-from '../../types';
+import type {RecipesByCategoryResponse} from '../../types';
 
 export default function CategoryPage(){
     const {categoryName} = useParams();
@@ -10,7 +9,7 @@ if (!categoryName){
 }
     const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${encodeURIComponent(categoryName)}`;
 
-    const {data, error} =useFetch<RecipesByCategoryResponse(url);
+    const {data, error} =useFetch<RecipesByCategoryResponse>(url);
     if(error) {
         return <p>{error}</p>
     }
