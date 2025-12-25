@@ -1,5 +1,6 @@
 import { useFetch } from "../../hooks/useFetch"
 import type { CategoriesResponse } from "../../types";
+import { Link } from "react-router-dom";
 
 export default function Home() {
    console.log("Home is loading")
