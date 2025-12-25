@@ -2,6 +2,7 @@ import { useFetch } from "../../hooks/useFetch"
 import type { CategoriesResponse } from "../../types";
 
 export default function Home() {
+   console.log("Home is loading")
     const {data, error} = useFetch<CategoriesResponse>(
         "https://www.themealdb.com/api/json/v1/1/categories.php"
     );

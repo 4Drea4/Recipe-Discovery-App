@@ -6,7 +6,7 @@ export function useFetch<Response>(url:string |null) {
 
     useEffect(() => {
         if (!url) return;
-
+        console.log("useFetch is loading")
         fetch(url)
         .then((response) => {
             if(!response.ok) {
