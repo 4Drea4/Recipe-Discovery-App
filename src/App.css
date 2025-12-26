@@ -1,12 +1,17 @@
 body{
   margin:0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #eef4ed;
+  color: #0b2545;
 }
 
 .searchButton{
-padding: .5 rem .9rem;
+padding: .5rem .9rem;
 font-weight: 600;
 border: none;
 border-radius: 10px;
+background: #13315c;
+color: #eef4ed;
 }
 .searchButton:hover {
   background-color: #586F7C;
@@ -18,7 +23,8 @@ background-color: transparent;
 border:none;
 outline: none;
 padding: .5 rem .70rem;
-color: #023618;
+color: #13315c;
+font-size: 1rem;
 }
 
 .search{
@@ -26,10 +32,11 @@ display: flex;
 align-items: center;
 gap: .5rem;
 max-width: 600px;
-margin: 1.5 rem auto;
-background-color:#CAC2B5 ;
+margin: 1.5rem auto;
+padding: .4rem;
+/* background-color:#0b2545; */
 border-radius: 10px;
-border: 1px solid;
+border: 1px solid #8da9c4;
 }
 
 .title{
@@ -38,13 +45,13 @@ justify-content: center;
 align-items: center;
 font-size: 2rem;
 font-weight: 700;
-margin-bottom: 1rem;
-color: #023618;
+margin: 1rem 0;
+color: #13315c;
 }
 
 .text{
-color:black;
-line-height: 2;
+color:#0b2545;
+line-height: 1.5;
 }
 
 .unorderedList{
@@ -59,25 +66,28 @@ gap:.75rem
 display: flex;
 border-radius: 10px;
 justify-content: space-between;
-padding: .75 1rem;
+padding: .75rem 1rem;
 align-items: center;
+background: #ffffff;
+border: 1px solid;
 
 }
 .button{
   padding: .5rem .9rem;
   font-weight: 600;
-  color: #053425;
+  color: #eef4ed;
   border:none;
   border-radius: 10px;
 }
 a{
-  color: #586F7C;
+  color: #13315c;
   text-decoration: none;
+  font-weight: 600;
 }
 .page{
   max-width: 1100px;
   margin:0 auto;
-  padding: 1.5 rem;
+  padding: 1.5rem;
 }
 .cardGrid{
   list-style: none;
@@ -88,7 +98,7 @@ a{
   grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
 }
 .card{
-  background-color: #e4e4e401;
+  background-color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
   border: 1px solid;
@@ -104,19 +114,17 @@ a{
   display: block;
 }
 .cardTitle{
-  margin: 0 0 .40 rem;
-  font-size: 1.05 rem;
+  margin: 0 0 .40rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: #f9fafb;
+  color: #0b2545;
 }
 .cardText{
   margin: 0;
   font-size: .9rem;
   line-height: 1.5;
-  color: #d1d5db;
+  color: #8da9c4
 }
-/* #4D243D brownish purple
-#023618 dark green
-#CAC2B5 tan
-#586F7C
-#FFFAFF */
+/* 134074 dark blue
+, 13315c,blue
+ 0b2545, 8da9c4, eef4ed */
