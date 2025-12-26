@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function SearchBar(){
     const [query, setQuery] = useState("");
@@ -23,6 +23,9 @@ export default function SearchBar(){
             />
 
             <button className='searchButton' type='button' onClick={handleSearch}>Search</button>
+
+            <Link to='/favorites' className='searchButton'>Favorites</Link>
         </div>
+
     )
 }

@@ -1,4 +1,4 @@
-import SearchBar from './components/Navbar';
+import SearchBar from './components/Navbar.tsx';
 import './App.css'
 import {Routes, Route, Navigate} from 'react-router-dom';
 import Home from './pages/home/Home';

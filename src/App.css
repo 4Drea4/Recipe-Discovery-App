@@ -75,6 +75,7 @@ border: 1px solid;
 .button{
   padding: .5rem .9rem;
   font-weight: 600;
+  background-color: #8da9c4;
   color: #eef4ed;
   border:none;
   border-radius: 10px;

@@ -7,7 +7,12 @@ For this project, you will build a client-side “Recipe Discovery” applicatio
 You will use a free, public API for recipe data and implement a varietys of hooks, state management patterns, and routing solutions to create a feature-rich, single-page application (SPA).
 
 ### Reflection
- The most difficult part of this project so far has been successfully utilizing routes and hooks to help me retrieve the data from the API. In addition having trouble managing my state. I think as the app is taking more features I have been having a bit of trouble, I also have been having some issues with managing my data. Initially was running into errors expecting certain outputs but running into issues when testing because I am using local storage. 
+*Challenges overview:*
+
+ The most difficult part of this project so far has been successfully utilizing routes and hooks to help me retrieve the data from the API. In addition having trouble managing my state. I think as the app is taking more features I have been having a bit of trouble, I also have been having some issues with managing my data. Initially was running into errors expecting certain outputs but running into issues when testing because I am using local storage. I had ran into the most issues when using state to make sure each component was being rendered correctly and this took the most time to ensure I was doing it correctly. I also had some difficulty when it came time to handle null data and re-renders. 
+
+
+ One design decision I made that I found to really be helpful was the suggested useFetch hook. This helped me because it helped me centralize logic and in my specific component I could just focus on making sure everything was displayed by using the same kind of code across multiple pages. 
 
 ### Technologies:
 - State Management and data fetching 
