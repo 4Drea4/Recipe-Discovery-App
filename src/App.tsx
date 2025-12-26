@@ -14,7 +14,7 @@ export default function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/category/:categoryName' element={<CategoryPage/>}/>
       <Route path='/recipe/:recipeId' element={<RecipeDetailPage/>}/>
-      <Route path='/favorites' element={<SearchPage/>}/>
+      <Route path='/favorites' element={<FavoritesPage/>}/>
       <Route path='/search' element={<SearchPage/>}/>
       <Route path='*' element={<h1>404 Not Found</h1>}/>
     

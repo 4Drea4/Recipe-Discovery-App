@@ -1,7 +1,7 @@
 import { useParams , Link} from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 import type { RecipeDetailResponse } from "../../types";
-import { useFavorites } from "../../context/FavoritesContext";
+import { useFavorites } from "../../context/FavoritesContext"; 
 
 export default function RecipeDetailPage(){
     const {recipeId} = useParams();
