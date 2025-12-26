@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import { useFavorites } from "../../context/FavoritesContext"; 
 import { useFetch } from "../../hooks/useFetch";
 import type { RecipeDetailResponse } from "../../types";
+import type { FavoriteId } from "../../types";
 
-function FavoriteRecipe({recipeId}: {recipeId:string}){
+function FavoriteRecipe({recipeId}: {recipeId: FavoriteId}){
     const {removeFavorite} = useFavorites();
 
 const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`;

@@ -4,9 +4,9 @@ import { useLocalStorage } from '../hooks/useLocalStorage';
 
 const FavoritesContext = createContext<FavoritesContextType | null>(null);
 
-export function Favorites({children}: {children: React.ReactNode}) {
+export function FavoritesProvider({children}: {children: React.ReactNode}) {
     const [favoriteIds, setFavoriteIds] = useLocalStorage<FavoriteId[]>(
-        "favorite Recipes",
+        "favorite_recipes",
         []
     );
 

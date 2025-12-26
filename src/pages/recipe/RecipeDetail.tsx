@@ -9,8 +9,8 @@ export default function RecipeDetailPage(){
      
     if (!recipeId){
         return <p> The recipe id is missing</p>
-
     }
+    const id =recipeId;
     const url= `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${encodeURIComponent(recipeId)}`;
 
 
@@ -26,9 +26,9 @@ export default function RecipeDetailPage(){
     const saved = isFavorite(recipeId);
     function handleFavoriteClick(){
         if(saved) {
-            removeFavorite(recipeId);
+            removeFavorite(id);
         } else {
-            addFavorite(recipeId);
+            addFavorite(id);
         }
     }
     
