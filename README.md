@@ -6,6 +6,9 @@ For this project, you will build a client-side “Recipe Discovery” applicatio
 
 You will use a free, public API for recipe data and implement a varietys of hooks, state management patterns, and routing solutions to create a feature-rich, single-page application (SPA).
 
+### Reflection
+ The most difficult part of this project so far has been successfully utilizing routes and hooks to help me retrieve the data from the API. In addition having trouble managing my state. I think as the app is taking more features I have been having a bit of trouble, I also have been having some issues with managing my data. Initially was running into errors expecting certain outputs but running into issues when testing because I am using local storage. 
+
 ### Technologies:
 - State Management and data fetching 
 - Custom Hooks
@@ -26,3 +29,4 @@ You will use a free, public API for recipe data and implement a varietys of hook
 - [Fetch](https://stackoverflow.com/questions/62315156/trying-to-create-a-fetch-request-with-react-hooks-my-data-is-still-null) 
 - [Clarity on api data fetching](https://www.youtube.com/watch?v=-bxhKTKxtOM)
 - [Little bit of help](https://www.youtube.com/watch?v=Kff25n75jqA)
+- [Encode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)

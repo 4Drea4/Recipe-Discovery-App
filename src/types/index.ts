@@ -34,3 +34,12 @@ export type RecipesByCategoryResponse ={
 export type RecipeDetailResponse = {
     meals: RecipeDetail[] | null;
 }
+
+// favorites
+export type FavoriteId = string;
+ export type FavoritesContextType={
+    favoriteIds: FavoriteId[];
+    addFavorite: (id: FavoriteId) => void;
+    removeFavorite: (id: FavoriteId) => void;
+    isFavorite: (id:FavoriteId) => boolean;
+ }

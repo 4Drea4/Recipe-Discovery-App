@@ -36,7 +36,7 @@ if (!categoryName){
 
 
             </ul>
-            <p> Show your recipes for {categoryName}
+            <p>  {categoryName}
             </p>
         </div>
     )
