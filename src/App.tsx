@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import SearchBar from './components/Navbar';
 // import './App.css'
 import {Routes, Route, Navigate} from 'react-router-dom';
 import Home from './pages/home/Home';
@@ -10,6 +10,8 @@ import SearchPage from './pages/search/Search';
 export default function App() {
   
   return (
+    <>
+    <SearchBar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/category/:categoryName' element={<CategoryPage/>}/>
@@ -19,6 +21,7 @@ export default function App() {
       <Route path='*' element={<h1>404 Not Found</h1>}/>
     
     </Routes>
+    </>
   )
 }
 
