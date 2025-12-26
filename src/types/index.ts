@@ -31,3 +31,6 @@ export type CategoriesResponse = {
 export type RecipesByCategoryResponse ={
     meals: RecipePreview[];
 }
+export type RecipeDetailResponse = {
+    meals: RecipeDetail[] | null;
+}
