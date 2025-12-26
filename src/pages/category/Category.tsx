@@ -5,7 +5,7 @@ import type {RecipesByCategoryResponse} from '../../types';
 export default function CategoryPage(){
     const {categoryName} = useParams();
 if (!categoryName){
-    return<p>Missing category </p>
+    return<p className="text">Missing category </p>
 }
     const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${encodeURIComponent(categoryName)}`;
 
@@ -22,22 +22,33 @@ if (!categoryName){
     }
 
     return (
-        <div>
+        <div className="page">
+            <p className="text">
+                <Link to='/'>Back to categories</Link>
+            </p>
             <h1 className="title">{categoryName}</h1>
 
-            <ul className="unorderedList">
+            <ul className="cardGrid">
             {data.meals.map((meal) => (
-                <li className="list" key={meal.idMeal}>
-                    <Link to={`/recipe/${meal.idMeal}`}>{meal.strMeal}</Link>
+                <li className="card" key={meal.idMeal}>
+                    <Link className='cardLink' to={`/recipe/${meal.idMeal}`}>
+                    <img 
+                    className="cardImage"
+                    src={meal.strMealThumb}
+                    />
+                    <div className="cardBody">
+                    <h2 className="cardTitle">{meal.strMeal}
+                    </h2>
+                    <p className="cardText">See Recipe!</p>
+                    </div>
+                    </Link>
 
                 </li>
-            ))
-            }
+            )) }
 
 
             </ul>
-            <p className="text"  >{categoryName}
-            </p>
+          
         </div>
     )
 }
