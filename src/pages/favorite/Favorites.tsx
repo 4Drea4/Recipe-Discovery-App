@@ -18,9 +18,9 @@ const recipe = data.meals?.[0];
 if(!recipe) return <li>I cant find this recipde {recipeId}</li>
 
 return(
-    <li>
+    <li className="list">
         <Link to={`/recipe/${recipeId}`}>{recipe.strMeal}</Link>
-        <button onClick={()=> removeFavorite(recipeId)}>Remove</button>
+        <button className="button" onClick={()=> removeFavorite(recipeId)}>Remove</button>
   
     </li>
 
@@ -30,7 +30,7 @@ export default function FavoritesPage(){
     const {favoriteIds} = useFavorites();
     return ( 
         <div>
-            <p>
+            <p className="text">
                 <Link to ='/'>Back to Categories</Link>
             </p>
 
@@ -38,7 +38,7 @@ export default function FavoritesPage(){
             {favoriteIds.length === 0 ? (
                 <p className="text">No favorites yet</p>
             ): (
-                <ul>
+                <ul className="unorderedList">
                     {favoriteIds.map((id) => (
                         <FavoriteRecipe key={id} recipeId={id}/>
                     )

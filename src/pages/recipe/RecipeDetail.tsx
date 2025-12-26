@@ -34,14 +34,14 @@ export default function RecipeDetailPage(){
     
     return (
         <div>
-            <p>
+            <p className="text">
                 <Link to='/'>Go back to Categories</Link>{""}|
                 <Link to='/favorites'>Favorites</Link>
             </p>
 
-            <h1> {recipe.strMeal}</h1>
+            <h1 className="title"> {recipe.strMeal}</h1>
 
-            <button onClick={handleFavoriteClick}>
+            <button className='button' onClick={handleFavoriteClick}>
                 {saved ? 'Remove from your Favorites' : 'Add to favorites'}
             </button>
 
@@ -51,9 +51,9 @@ export default function RecipeDetailPage(){
                 alt={recipe.strMeal}
                 />
             )}
-            <h3>Instructions</h3>
-            <p>{recipe.strInstructions}</p>
-            <p>View recipe id: {recipeId} </p>
+            <h3 className="title">Instructions</h3>
+            <p className="text">{recipe.strInstructions}</p>
+            <p className="text">View recipe id: {recipeId} </p>
         </div>
     );
 }

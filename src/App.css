@@ -33,13 +33,47 @@ border: 1px solid;
 }
 
 .title{
-
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+font-weight: 700;
+margin-bottom: 1rem;
+color: #023618;
 }
 
 .text{
-
+color:black;
+line-height: 2;
 }
 
+.unorderedList{
+list-style: none;
+padding: 0;
+margin: 1rem 0;
+display: grid;
+gap:.75rem
+}
+
+.list{
+display: flex;
+border-radius: 10px;
+justify-content: space-between;
+padding: .75 1rem;
+align-items: center;
+
+}
+.button{
+  padding: .5rem .9rem;
+  font-weight: 600;
+  color: #053425;
+  border:none;
+  border-radius: 10px;
+}
+a{
+  color: #586F7C;
+  text-decoration: none;
+}
 /* #4D243D brownish purple
 #023618 dark green
 #CAC2B5 tan

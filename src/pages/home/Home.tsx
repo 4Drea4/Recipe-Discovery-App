@@ -16,9 +16,9 @@ export default function Home() {
     return(
         <div>
             <h1 className="title">Recipe Discovery</h1>
-            <ul>
+            <ul className="unorderedList">
                  {data.categories.map((category) => (
-                <li key= {category.idCategory}>
+                <li className="link" key= {category.idCategory}>
                  <Link to={`/category/${category.strCategory}`}>{category.strCategory}</Link>
                 </li>
           

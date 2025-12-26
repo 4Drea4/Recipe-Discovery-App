@@ -18,16 +18,16 @@ if (!categoryName){
     }
 
     if (!data.meals || data.meals.length===0) {
-        return <p>No recipes found</p>
+        return <p className="text">No recipes found</p>
     }
 
     return (
         <div>
-            <h1>{categoryName}</h1>
+            <h1 className="title">{categoryName}</h1>
 
-            <ul>
+            <ul className="unorderedList">
             {data.meals.map((meal) => (
-                <li key={meal.idMeal}>
+                <li className="list" key={meal.idMeal}>
                     <Link to={`/recipe/${meal.idMeal}`}>{meal.strMeal}</Link>
 
                 </li>
@@ -36,7 +36,7 @@ if (!categoryName){
 
 
             </ul>
-            <p>  {categoryName}
+            <p className="text"  >{categoryName}
             </p>
         </div>
     )

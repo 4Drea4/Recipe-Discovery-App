@@ -25,9 +25,9 @@ export default function SearchPage(){
 
         return(
             <div>
-                <h1>Search</h1>
-                <p>{query}: No results found </p>
-                <p>
+                <h1 className="title">Search</h1>
+                <p className="text">{query}: No results found </p>
+                <p className="text">
                 <Link to ='/'>Back to Categories</Link>
                 </p>
             </div>
@@ -35,12 +35,12 @@ export default function SearchPage(){
     }
     return (
         <div>
-            <h1>Search Results</h1>
-            <p> Seraching for {query} </p>
+            <h1 className="title">Search Results</h1>
+            <p className="text"> Seraching for {query} </p>
 
-            <ul>
+            <ul className="unorderedList">
                 {data.meals.map((meal) => (
-                    <li key={meal.idMeal}>
+                    <li className="list" key={meal.idMeal}>
                         <Link to = {`/recipe/${meal.idMeal}`}>{meal.strMeal}</Link>
                     </li>
                 )
