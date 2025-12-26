@@ -43,3 +43,8 @@ export type FavoriteId = string;
     removeFavorite: (id: FavoriteId) => void;
     isFavorite: (id:FavoriteId) => boolean;
  }
+
+//  search
+export type SearchResponse = {
+    meals: RecipeDetail[] | null;
+}
