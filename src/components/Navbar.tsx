@@ -13,6 +13,13 @@ export default function SearchBar(){
     }
 
     return (
+        <>
+        <nav className='navbar'>
+            <h2 className='navTitle'>
+            <Link to='/'>Recipe Discovery</Link>
+            </h2>
+   
+
         <div className='search'>
             <input
             className="searchInput"
@@ -23,9 +30,12 @@ export default function SearchBar(){
             />
 
             <button className='searchButton' type='button' onClick={handleSearch}>Search</button>
-
-            <Link to='/favorites' className='searchButton'>Favorites</Link>
         </div>
 
+        <div className='navLinks'>
+        <Link to='/favorites' className='navLink'>Favorites</Link>
+        </div>
+        </nav>
+</>
     )
 }
