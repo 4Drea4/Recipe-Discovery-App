@@ -16,21 +16,24 @@ export default function Home() {
     return(
         <div className="page">
             <h1 className="title">Recipe Discovery</h1>
-            <ul className="unorderedList">
+            <ul className="cardGrid">
                  {data.categories.map((category) => (
-                <li className="link" key= {category.idCategory}>
-                 <Link to={`/category/${category.strCategory}`}>
+                <li className="card" key= {category.idCategory}>
+                 <Link className="cardLink" to={`/category/${category.strCategory}`}>
                  <img
-                 className="card"
+                 className="cardImage"
                  src={category.strCategoryThumb}/>
-                 <div className="card">
+                 <div className="cardBody">
                     <h2 className="cardTitle">{category.strCategory}</h2>
-                    <p className="cardText">{category.strCategoryDescription?.slice(0,110)}</p>
+                    <p className="cardText">{category.strCategoryDescription?.slice(0,110)}
+                        
+                    </p>
                  </div>
                 
                  </Link>
                 </li>
         ))}
+
             </ul>
         </div>
     )
