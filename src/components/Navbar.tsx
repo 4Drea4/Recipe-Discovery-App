@@ -13,15 +13,16 @@ export default function SearchBar(){
     }
 
     return (
-        <div className='navBar'>
+        <div className='search'>
             <input
+            className="searchInput"
             type='text'
             value={query}
             placeholder="Whats on the menu?"
             onChange={(e) => setQuery(e.target.value)}
             />
 
-            <button type='button' onClick={handleSearch}>Search</button>
+            <button className='searchButton' type='button' onClick={handleSearch}>Search</button>
         </div>
     )
 }

@@ -15,7 +15,7 @@ export default function Home() {
     }
     return(
         <div>
-            <h1>Recipe Discovery</h1>
+            <h1 className="title">Recipe Discovery</h1>
             <ul>
                  {data.categories.map((category) => (
                 <li key= {category.idCategory}>

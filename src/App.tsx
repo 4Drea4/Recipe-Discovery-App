@@ -1,5 +1,5 @@
 import SearchBar from './components/Navbar';
-// import './App.css'
+import './App.css'
 import {Routes, Route, Navigate} from 'react-router-dom';
 import Home from './pages/home/Home';
 import CategoryPage from './pages/category/Category';

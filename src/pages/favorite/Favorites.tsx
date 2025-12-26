@@ -34,9 +34,9 @@ export default function FavoritesPage(){
                 <Link to ='/'>Back to Categories</Link>
             </p>
 
-            <h1>Favorites</h1>
+            <h1 className="title">Favorites</h1>
             {favoriteIds.length === 0 ? (
-                <p>No favorites yet</p>
+                <p className="text">No favorites yet</p>
             ): (
                 <ul>
                     {favoriteIds.map((id) => (
